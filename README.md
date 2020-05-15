@@ -19,3 +19,7 @@ Running pretrained models
 Training models
 ------
 #### Coming soon
+
+Acknowledgement
+------
+This research is partially supported by NSERC Discovery Grants, NSERC Discovery Grants Accelerator Supplements, DND/NSERC Discovery Grant Supplement, and Autodesk. We would like to thank architects and students for participating in our user study.
