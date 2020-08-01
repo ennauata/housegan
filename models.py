@@ -82,9 +82,9 @@ def conv_block(in_channels, out_channels, k, s, p, act=None, upsample=False, spe
     if "leaky" in act:
         block.append(torch.nn.LeakyReLU(0.1, inplace=True))
     elif "relu" in act:
-        torch.nn.ReLU(True)
+        block.append(torch.nn.ReLU(True))
     elif "tanh":
-        torch.nn.Tanh()
+        block.append(torch.nn.Tanh())
     return block
 
 class CMP(nn.Module):
