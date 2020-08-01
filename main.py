@@ -29,7 +29,7 @@ parser.add_argument("--b2", type=float, default=0.999, help="adam: decay of firs
 parser.add_argument("--n_cpu", type=int, default=8, help="number of cpu threads to use during batch generation")
 parser.add_argument("--latent_dim", type=int, default=128, help="dimensionality of the latent space")
 parser.add_argument("--img_size", type=int, default=32, help="size of each image dimension")
-parser.add_argument("--sample_interval", type=int, default=10, help="interval between image sampling")
+parser.add_argument("--sample_interval", type=int, default=50000, help="interval between image sampling")
 parser.add_argument("--exp_folder", type=str, default='exp', help="destination folder")
 parser.add_argument("--n_critic", type=int, default=1, help="number of training steps for discriminator per iter")
 parser.add_argument("--target_set", type=str, default='A', help="which split to remove")
@@ -43,6 +43,8 @@ multi_gpu = True
 #                                                                         opt.latent_dim, opt.b1, opt.b2)
 exp_folder = "{}_{}".format(opt.exp_folder, opt.target_set)
 os.makedirs("./exps/"+exp_folder, exist_ok=True)
+os.makedirs("./checkpoints/", exist_ok=True)
+os.makedirs("./temp/", exist_ok=True)
 
 # Loss function
 adversarial_loss = torch.nn.BCEWithLogitsLoss()
@@ -137,7 +139,7 @@ def visualizeSingleBatch(fp_loader_test, opt):
     return
 
 # Configure data loader
-rooms_path = '/local-scratch/nnauata/autodesk/FloorplanDataset/'
+rooms_path = '/home/nelson/Workspace/autodesk/housegan/'
 fp_dataset_train = FloorplanGraphDataset(rooms_path, transforms.Normalize(mean=[0.5], std=[0.5]), target_set=opt.target_set)
 fp_loader = torch.utils.data.DataLoader(fp_dataset_train, 
                                         batch_size=opt.batch_size, 
@@ -253,7 +255,7 @@ for epoch in range(opt.n_epochs):
             # Score fake images
             if multi_gpu:
                 fake_validity = data_parallel(discriminator, \
-                                             (gen_ach segmentation mask imks, given_nds, \
+                                             (gen_mks, given_nds, \
                                               given_eds, nd_to_sample), \
                                               indices)
             else:
