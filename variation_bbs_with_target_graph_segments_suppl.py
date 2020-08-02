@@ -42,6 +42,8 @@ exp_name = 'exp_with_graph_global_new'
 target_set = 'D'
 phase='eval'
 checkpoint = './checkpoints/{}_{}_{}.pth'.format(exp_name, target_set, numb_iters)
+os.makedirs("./dump/", exist_ok=True)
+os.makedirs("./output/", exist_ok=True)
 
 def pad_im(cr_im, final_size=256, bkg_color='white'):    
     new_size = int(np.max([np.max(list(cr_im.size)), final_size]))
