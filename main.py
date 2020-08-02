@@ -272,6 +272,5 @@ for epoch in range(opt.n_epochs):
             if (batches_done % opt.sample_interval == 0) and batches_done:
                 torch.save(generator.state_dict(), './checkpoints/{}_{}.pth'.format(exp_folder, batches_done))
                 visualizeSingleBatch(fp_loader_test, opt)
-                exit(0)
             batches_done += opt.n_critic
             
