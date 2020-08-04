@@ -19,7 +19,7 @@ For running a pretrained model check out the following steps:
 - Place them anywhere and rename the dataset to train_data.npy.
 - Set the path in variation_bbs_with_target_graph_segments_suppl.py to the path of the folder containing train_data.npy and to the pretrained model.
 - Run ***python variation_bbs_with_target_graph_segments_suppl.py***.
-- Check out the reulsts in output folder.
+- Check out the results in output folder.
 
 Training models
 ------
