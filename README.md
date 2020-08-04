@@ -15,8 +15,7 @@ Data
 Running pretrained models
 ------
 For running a pretrained model check out the following steps:
-- Download dataset [here](https://www.dropbox.com/sh/p707nojabzf0nhi/AAB4UPwW0EgHhbQuHyq60tCKa?dl=0).
-- Download pretrained model ***exp_demo_D_500000.pth*** [here](https://www.dropbox.com/sh/p707nojabzf0nhi/AAB4UPwW0EgHhbQuHyq60tCKa?dl=0).
+- Download pretrained model and dataset [here](https://www.dropbox.com/sh/p707nojabzf0nhi/AAB4UPwW0EgHhbQuHyq60tCKa?dl=0).
 - Place them anywhere and rename the dataset to train_data.npy.
 - Set the path in variation_bbs_with_target_graph_segments_suppl.py to the path of the folder containing train_data.npy and to the pretrained model.
 - Run ***python variation_bbs_with_target_graph_segments_suppl.py***.
