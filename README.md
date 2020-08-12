@@ -25,8 +25,8 @@ Training models
 ------
 For training a model from scratch check out the following steps:
 - Download dataset [here](https://www.dropbox.com/sh/p707nojabzf0nhi/AAB4UPwW0EgHhbQuHyq60tCKa?dl=0).
-- Place it anywhere and rename it to train_data.npy.
-- Set the path in main.py to the path of the folder containing train_data.npy.
+- Place ***housegan_clean_data.npy*** anywhere and rename it to ***train_data.npy***.
+- Set the path in ***main.py*** to the path of the folder containing ***train_data.npy***.
 - run ***python main.py --target_set D --exp_folder exp_example***. The target_set argument corresponds to which portion of the graphs you want to hold out for cross-validation, where D mean graphs of size 10-12. 
 - You may also want to customize the interval for probing the generator by setting sample_interval in main.py.
 - Check out exps and checkpoint folders for intermediate outputs and checkpoints, respectively.
