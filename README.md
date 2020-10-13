@@ -12,6 +12,8 @@ Data
 
 [[1]](https://jiajunwu.com/papers/im2cad_iccv.pdf) Liu, C., Wu, J., Kohli, P., Furukawa, Y.:  Raster-to-vector:  Revisiting  floorplan transformation, ICCV 2017.
 
+***See requirements.txt for checking the depencies for running the code***
+
 Running pretrained models
 ------
 For running a pretrained model check out the following steps:
@@ -30,6 +32,19 @@ For training a model from scratch check out the following steps:
 - run ***python main.py --target_set D --exp_folder exp_example***. The target_set argument corresponds to which portion of the graphs you want to hold out for cross-validation, where D mean graphs of size 10-12. 
 - You may also want to customize the interval for probing the generator by setting sample_interval in main.py.
 - Check out exps and checkpoint folders for intermediate outputs and checkpoints, respectively.
+
+Citation
+------
+@article{nauata2020house,
+  title={House-GAN: Relational Generative Adversarial Networks for Graph-constrained House Layout Generation},
+  author={Nauata, Nelson and Chang, Kai-Hung and Cheng, Chin-Yi and Mori, Greg and Furukawa, Yasutaka},
+  journal={arXiv preprint arXiv:2003.06988},
+  year={2020}
+}
+
+Contact
+------
+If you have any question, feel free to contact me at nnauata@sfu.ca
 
 
 Acknowledgement
