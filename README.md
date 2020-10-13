@@ -15,6 +15,7 @@ Data
 Running pretrained models
 ------
 ***See requirements.txt for checking the dependencies before running the code***
+
 For running a pretrained model check out the following steps:
 - Download pretrained model and dataset [here](https://www.dropbox.com/sh/p707nojabzf0nhi/AAB4UPwW0EgHhbQuHyq60tCKa?dl=0).
 - Place them anywhere and rename the dataset to train_data.npy.
@@ -25,6 +26,7 @@ For running a pretrained model check out the following steps:
 Training models
 ------
 ***See requirements.txt for checking the dependencies before running the code***
+
 For training a model from scratch check out the following steps:
 - Download dataset [here](https://www.dropbox.com/sh/p707nojabzf0nhi/AAB4UPwW0EgHhbQuHyq60tCKa?dl=0).
 - Place ***housegan_clean_data.npy*** anywhere and rename it to ***train_data.npy***.
