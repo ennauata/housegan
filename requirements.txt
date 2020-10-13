@@ -1,0 +1,13 @@
+Pillow == 7.2.0
+imageio == 2.9.0
+networkx == 2.4
+numpy == 1.18.3
+opencv-python == 4.4.0.42
+pygraphviz == 1.6
+scikit-image == 0.17.2
+scipy == 1.4.1
+svgwrite == 1.4
+webcolors == 1.11.1
+matplotlib == 3.2.1
+torch == 1.5.0+cu101
+torchvision == 0.6.0+cu101
