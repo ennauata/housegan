@@ -12,10 +12,10 @@ Data
 
 [[1]](https://jiajunwu.com/papers/im2cad_iccv.pdf) Liu, C., Wu, J., Kohli, P., Furukawa, Y.:  Raster-to-vector:  Revisiting  floorplan transformation, ICCV 2017.
 
-***See requirements.txt for checking the depencies for running the code***
-
 Running pretrained models
 ------
+***See requirements.txt for checking the depencies before running the code***
+
 For running a pretrained model check out the following steps:
 - Download pretrained model and dataset [here](https://www.dropbox.com/sh/p707nojabzf0nhi/AAB4UPwW0EgHhbQuHyq60tCKa?dl=0).
 - Place them anywhere and rename the dataset to train_data.npy.
