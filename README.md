@@ -2,7 +2,7 @@ House-GAN
 ======
 
 Code and instructions for our paper:
-[House-GAN: Relational Generative Adversarial Networks for Graph-constrained House Layout Generation](https://arxiv.org/pdf/2003.06988)[ECCV'20].
+[House-GAN: Relational Generative Adversarial Networks for Graph-constrained House Layout Generation](https://arxiv.org/pdf/2003.06988), ECCV 2020.
 
 Data
 ------
