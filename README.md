@@ -37,10 +37,10 @@ For training a model from scratch check out the following steps:
 
 Citation
 ------
-@article{nauata2020house,
+@inproceedings{Nauata2020HouseGANRG,
   title={House-GAN: Relational Generative Adversarial Networks for Graph-constrained House Layout Generation},
-  author={Nauata, Nelson and Chang, Kai-Hung and Cheng, Chin-Yi and Mori, Greg and Furukawa, Yasutaka},
-  journal={arXiv preprint arXiv:2003.06988},
+  author={Nelson Nauata and K. Chang and Chin-Yi Cheng and G. Mori and Y. Furukawa},
+  booktitle={ECCV},
   year={2020}
 }
 
