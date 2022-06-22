@@ -1,7 +1,7 @@
 Pillow == 7.2.0
 imageio == 2.9.0
 networkx == 2.4
-numpy == 1.18.3
+numpy == 1.22.0
 opencv-python == 4.4.0.42
 pygraphviz == 1.6
 scikit-image == 0.17.2
