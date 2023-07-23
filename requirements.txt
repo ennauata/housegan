@@ -9,5 +9,5 @@ scipy == 1.4.1
 svgwrite == 1.4
 webcolors == 1.11.1
 matplotlib == 3.2.1
-torch == 1.5.0+cu101
+torch == 1.13.1
 torchvision == 0.6.0+cu101
