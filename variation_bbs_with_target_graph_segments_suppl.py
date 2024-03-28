@@ -171,7 +171,10 @@ os.makedirs(opt.exp_folder, exist_ok=True)
 
 # Initialize generator and discriminator
 generator = Generator()
-generator.load_state_dict(torch.load(checkpoint))
+if torch.cuda.is_available() :
+    generator.load_state_dict(torch.load(checkpoint))
+else: 
+    generator.load_state_dict(torch.load(checkpoint, map_location=torch.device('cpu')))
 
 # Initialize variables
 cuda = True if torch.cuda.is_available() else False
@@ -246,7 +249,7 @@ for i, batch in enumerate(fp_loader):
         final_images = final_images_new
         final_images = torch.stack(final_images)
         print(final_images)
-        save_image(final_images, "./output/results_page_{}_{}.png".format(target_set, page_count), nrow=2*opt.num_variations+1, padding=2, range=(0, 1), pad_value=0.5, normalize=False)
+        save_image(final_images[0], "./output/results_page_{}_{}.png".format(target_set, page_count), nrow=2*opt.num_variations+1, padding=2, range=(0, 1), pad_value=0.5, normalize=False)
         page_count += 1
         n_rows = 0
         final_images = []
